@@ -1,7 +1,7 @@
 
 body{
 	font-family: helvetica;
-    background-color: #d4c9c2;
+    background-color: #D6F3FF;
 }
 
 
@@ -27,13 +27,13 @@ header h3{
     nbackground: -moz-linear-gradient(#4073AB, #44A3C3); /* For Firefox 3.6 to 15 */
     nbackground: linear-gradient(#4073AB, #44A3C3); /* Standard syntax (must be last) */
 	margin: auto;
-	height: 200px;
+	height: 160px;
 	position: relative;
 }
 
 .wrap{
 	min-width: 600px;
-	width: 80%;
+	width: 98%;
 	margin: auto;
 	margin-top: 10px;
 	padding: 5px;
@@ -42,7 +42,7 @@ header h3{
 	}
 
 .navigation{
-	margin: 0px;
+	margin-left: 50px;
 	abox-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	
 }
@@ -51,7 +51,7 @@ header h3{
 	padding-right: 0px;
 }	
 .dropbtn {
-    background-color: #6b6a5e;
+    background-color: #49533a;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -110,17 +110,17 @@ li a:hover {
 }
 
 .content{
-	background: #d4c9c2;
+	background: #FBF9DB;
 	float: right;
-	width: 88%;
+	width: 86%;
 	padding: 1%;
 	margin: 0;
 
 }
 aside {
-	abackground: #fff;
+	background: #FBF9DB;
 	float: left;
-	width: 8%;
+	width: 10%;
 	padding: 1%;
 	    abox-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
