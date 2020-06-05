@@ -1,5 +1,5 @@
 <!doctype html>
-	<html lang="en">
+	<html lang="es">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="description" content="This is Tsuruno's website">
@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="keywords" content="tsuruno, community, krakow" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/gtranslate.css" />
@@ -46,23 +46,24 @@
 				}
 			</style>
 		</noscript>
-		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
-			<div class="rg-image-wrapper">
-				{{if itemsCount > 1}}
-					<div class="rg-image-nav">
-						<a href="#" class="rg-image-nav-prev">Previous Image</a>
-						<a href="#" class="rg-image-nav-next">Next Image</a>
-					</div>
-				{{/if}}
-				<div class="rg-image"></div>
-				<div class="rg-loading"></div>
-				<div class="rg-caption-wrapper">
-					<div class="rg-caption" style="display:none;">
-						<p></p>
-					</div>
-				</div>
+
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+	<div class="rg-image-wrapper">
+		{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
 			</div>
-		</script>
+		{{/if}}
+		<div class="rg-image"></div>
+		<div class="rg-loading"></div>
+		<div class="rg-caption-wrapper">
+			<div class="rg-caption" style="display:none;">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</script>
 
 </head>
 
@@ -74,15 +75,15 @@
  <div class="navigation">
 	<ul>
 	<div class="dropdown">
-    <a href="index.html"><button class="dropbtn">Home</button></a>
+    <a href="index.html"><button class="dropbtn">Inicio</button></a>
 </div>
 	<div class="dropdown">
-  <button class="dropbtn">Works</button>
+  <button class="dropbtn">Trabajos</button>
   <div class="dropdown-content">
     <a href="audios.html">Audios</a>
-    <a href="galeria.html">Visuals</a>
+    <a href="galeria.html">Visuales</a>
 	<a href="index.html" style="font-size:11.2px"> Audiovisuales</a>
-	<a href="escritos.html">Writtings</a>
+	<a href="escritos.html">Escritos</a>
   </div>
 </div>
 	<div class="dropdown">
@@ -93,7 +94,7 @@
   <a href="comunidad.html"><button class="dropbtn">Comunidad</button></a>
     <div class="dropdown-content">
      
-	<a href="calendario.html">Calendar</a>
+	<a href="calendario.html">Calendario</a>
   </div>
 
 
@@ -139,10 +140,10 @@
 	
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
-		<script type="text/javascript" src="js/gallery.js"></script>
+		<script type="text/javascript" src="../js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="../js/gallery.js"></script>
 	</div><!-- container -->
 <aside>
 	<ul>
@@ -150,13 +151,13 @@
   <a href="#" onclick="doGTranslate('es|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="English" /></a><a href="#" onclick="doGTranslate('es|fr');return false;" title="French" class="gflag nturl" style="background-position:-200px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French" /></a><a href="#" onclick="doGTranslate('es|de');return false;" title="German" class="gflag nturl" style="background-position:-300px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="German" /></a><a href="#" onclick="doGTranslate('es|it');return false;" title="Italian" class="gflag nturl" style="background-position:-600px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Italian" /></a><a href="#" onclick="doGTranslate('es|ja');return false;" title="Japanese" class="gflag nturl" style="background-position:-700px -100px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Japanese" /></a><a href="#" onclick="doGTranslate('es|pl');return false;" title="Polish" class="gflag nturl" style="background-position:-200px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Polish" /></a><a href="#" onclick="doGTranslate('es|ru');return false;" title="Russian" class="gflag nturl" style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Russian" /></a><a href="#" onclick="doGTranslate('es|es');return false;" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;"><img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Spanish" /></a>
 
 <div id="google_translate_element2"></div>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
 
 
 
-		<li><a href="noticias.html">News</a></li>
-		<li><a href="descargas.html">Downloads</a></li>
+		<li><a href="noticias.html">Noticias</a></li>
+		<li><a href="descargas.html">Descargas</a></li>
 		
 		<li><a href="links.html">Links</a></li>
 
