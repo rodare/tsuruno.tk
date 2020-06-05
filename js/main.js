@@ -57,7 +57,7 @@ function memberRedirect(){
     }
     else if(a==="Bacho-Chubinidze"){
      
-      location.replace("/../../bacho-chubinidze")
+      location.replace("/../bacho-chubinidze")
 
   }
 
@@ -70,7 +70,10 @@ function memberRedirect(){
   document.getElementById("output2").innerHTML=string;
   
 }
-
+function writeName(){
+  var b=document.getElementById("input3").value;
+  document.getElementById("output3").innerHTML=a;
+}
 
 //   var arr1=["Maharashtra","Delhi"]
 //   var string="";
