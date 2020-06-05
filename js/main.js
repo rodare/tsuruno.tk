@@ -22,13 +22,13 @@
 function cityMember(){
   var a= document.getElementById("output").value;
     if(a==="Kraków"){
-  var arr=["select member","Milko-Grozeb", "Rodrigo-Arenas", "Bacho-Chubinidze"];
+  var arr=["select member","Milko-Grozeb", "Rodrigo-Arenas", "Bacho-Chubinidze", "Magda-Grzesiak"];
     }
     else if(a==="Poznan"){
   var arr=["Kasia","Eduardo","Lorena"];
           }
     else if(a==="Santiago"){
-  var arr=["select member", "Magda","Diego"];
+  var arr=["select member", "Magdalena-Carrasco","Diego"];
             }
     else if(a==="La_Serena"){
   var arr=["select member", "Ignacio", "Pancho", "Halszka", "Max", "Esteban"];
@@ -45,24 +45,22 @@ document.getElementById("output2").innerHTML=string;
 
 function memberRedirect(){
   var a= document.getElementById("output2").value;
-    if(a==="Rod"){
-      location.replace("../rodrigoarenas.cf")
-    }
+    if(a==="Rodrigo-Arenas"){
+     
+    location.replace("../../tsuruno.tk/rodrigo-arenas")
+
+}
     else if(a==="Milko-Grozeb"){
      
-        location.replace("milko-grozeb")
+      location.replace("../../tsuruno.tk/milko-grozeb")
   
     }
     else if(a==="Bacho-Chubinidze"){
      
-      location.replace("bacho-chubinidze")
+      location.replace("../../tsuruno.tk/bacho-chubinidze")
 
   }
-  else if(a==="Rodrigo-Arenas"){
-     
-    location.replace("rodrigo-arenas")
 
-}
     else 
     var string="";
 
