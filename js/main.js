@@ -47,17 +47,17 @@ function memberRedirect(){
   var a= document.getElementById("output2").value;
     if(a==="Rodrigo-Arenas"){
      
-    location.replace("../../../tsuruno.tk/rodrigo-arenas")
+    location.replace("../../tsuruno.tk/rodrigo-arenas")
 
 }
     else if(a==="Milko-Grozeb"){
      
-      location.replace("../../../tsuruno.tk/milko-grozeb")
+      location.replace("../../tsuruno.tk/milko-grozeb")
   
     }
     else if(a==="Bacho-Chubinidze"){
      
-      location.replace("../../../tsuruno.tk/bacho-chubinidze")
+      location.replace("/../bacho-chubinidze")
 
   }
 
