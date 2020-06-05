@@ -5,11 +5,11 @@
   function random_function()
             {
             var a= document.getElementById("input").value;
-                if(a==="INDIA"){
-            var arr=["Maharashtra","Delhi"];
+                if(a==="POLAND"){
+            var arr=["select city", "Kraków", "Poznan"];
                 }
-                else if(a==="USA"){
-            var arr=["Washington","Texas","New York"];
+                else if(a==="CHILE"){
+            var arr=["select city", "Santiago","La_Serena"];
                 }
            var string="";
              
@@ -21,12 +21,18 @@
 
 function random_function1(){
   var a= document.getElementById("output").value;
-    if(a==="Delhi"){
+    if(a==="Kraków"){
   var arr=["select member","Milko", "Rod"];
     }
-    else if(a==="Maharashtra"){
-  var arr=["Javier","Pepe","Lorena"];
+    else if(a==="Poznan"){
+  var arr=["Kasia","Eduardo","Lorena"];
           }
+    else if(a==="Santiago"){
+  var arr=["select member", "Magda","Diego"];
+            }
+    else if(a==="La_Serena"){
+  var arr=["select member", "Ignacio", "Pancho", "Halszka", "Max", "Esteban"];
+            }
     else
   var string="";
 
@@ -48,7 +54,7 @@ function random_function2(){
   
     }
     else 
-      document.write("No one is cool");
+      document.write("A very cool person");
 }
 
 
