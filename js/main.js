@@ -22,7 +22,7 @@
 function cityMember(){
   var a= document.getElementById("output").value;
     if(a==="Kraków"){
-  var arr=["select member","Milko", "Rod", "Bacho"];
+  var arr=["select member","Milko-Grozeb", "Rodrigo-Arenas", "Bacho-Chubinidze"];
     }
     else if(a==="Poznan"){
   var arr=["Kasia","Eduardo","Lorena"];
@@ -48,11 +48,21 @@ function memberRedirect(){
     if(a==="Rod"){
       location.replace("../rodrigoarenas.cf")
     }
-    else if(a==="Milko"){
+    else if(a==="Milko-Grozeb"){
      
-        location.replace("milko")
+        location.replace("milko-grozeb")
   
     }
+    else if(a==="Bacho-Chubinidze"){
+     
+      location.replace("bacho-chubinidze")
+
+  }
+  else if(a==="Rodrigo-Arenas"){
+     
+    location.replace("rodrigo-arenas")
+
+}
     else 
     var string="";
 
