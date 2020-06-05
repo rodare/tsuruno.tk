@@ -47,17 +47,17 @@ function memberRedirect(){
   var a= document.getElementById("output2").value;
     if(a==="Rodrigo-Arenas"){
      
-    location.replace("/../rodrigo-arenas")
+    location.replace("/../../rodrigo-arenas")
 
 }
     else if(a==="Milko-Grozeb"){
      
-      location.replace("/../milko-grozeb")
+      location.replace("/../../milko-grozeb")
   
     }
     else if(a==="Bacho-Chubinidze"){
      
-      location.replace("/../bacho-chubinidze")
+      location.replace("/../../bacho-chubinidze")
 
   }
 
