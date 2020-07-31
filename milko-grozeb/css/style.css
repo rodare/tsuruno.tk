@@ -26,6 +26,7 @@ header h3{
 	position: relative;
 }
 
+
 .wrap{
 	min-width: 600px;
 	width: 98%;
@@ -36,7 +37,15 @@ header h3{
 	
 	}
 
+.memberName{
+	padding-left:320px;
+	font-size: 30px;
+	height:5px;
+	margin:-100px -200px 90px -80px;
+	}
+
 .navigation{
+	height:20px;
 	margin-left: 0px;
 
 }
@@ -45,6 +54,8 @@ header h3{
 	display: inline;
 	padding-right: 0px;
 }	
+
+
 .dropbtn {
     background-color: #49533a;
     color: white;
@@ -159,5 +170,3 @@ textarea {
 	margin: 10px 0 10px -37px;
 	font-weight: bold;
 }
-
-
