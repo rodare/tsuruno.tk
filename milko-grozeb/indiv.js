@@ -8,10 +8,6 @@
 var name = document.getElementById("memberName").innerHTML = "Your Name Here";
 var email = document.getElementById("memberEmail").innerHTML = "rodare.cl@gmail.com";
 
-function pruebaa {
-    document.getElementById("pruebaa").innerHTML = "Hola";
-}
-
 // function writeName(){
 //   var b=document.getElementById("input3").value; 
 //   document.getElementById("output3").innerHTML=b;
