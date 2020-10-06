@@ -22,11 +22,27 @@ function pressed(){
 }
 
 
-function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+function googleTranslateElementInit2() {
+    new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');
+}
 
 /* <![CDATA[ */
 eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
 /* ]]> */
+
+
+function myCalendar() {
+    var g = document.createElement("iframe");
+    g.setAttribute("class", "content");
+    g.setAttribute("id", "myFrame");
+          g.setAttribute("src", "https://calendar.google.com/calendar/embed?src=qpbmcm8fg31ntfemrq9kvd4e2s%40group.calendar.google.com&ctz=Europe%2FWarsaw");
+      g.setAttribute("style", "border: 0");
+          g.setAttribute("width", "800");
+           g.setAttribute("height", "600");
+           g.setAttribute("frameborder", "0");
+           
+    document.body.appendChild(g);
+  }
 
 // var arr = ["hola", 1, 2, 5, "yo"]
 // var i = 0
@@ -56,7 +72,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 //     name2 = document.getElementById("memberName2").innerHTML = "Milko Grozeb";
 //     email = document.getElementById("memberEmail").innerHTML = "Your Email Here";
 
-// To paste your calendar, get its Public URL following these instructions (https://support.google.com/calendar/answer/41207?hl=es) and paste in Calendar.html line 67.
+// To paste your calendar, get its Public URL following these instructions (https://support.google.com/calendar/answer/41207?hl=es) and paste in calendar.html line 67.
 
 
 // function writeName(){
