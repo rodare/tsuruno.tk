@@ -2,18 +2,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Creative Engineering</title>
+    <title>Spanish</title>
     <googleplay:author>Rodrigo Arenas Catalán</googleplay:author>
     <rawvoice:rating>TV-G</rawvoice:rating>
-    <rawvoice:location>San Francisco, California</rawvoice:location>
+    <rawvoice:location>Kraków, Poland</rawvoice:location>
     <rawvoice:frequency>Weekly</rawvoice:frequency>
     <author>Rodrigo Arenas Catalán</author>
     <itunes:author>Rodrigo Arenas Catalán</itunes:author>
     <itunes:email>rodare.cl@gmail.com</itunes:email>
-    <itunes:category text="Technology" />
+    <itunes:category text="Arts" />
     <image>
       <url>https://rodare.github.io/tsuruno.tk/img/icon.jpg</url>
-      <title>Creative Engineering</title>
+      <title>Spanish</title>
       <link>https://rodare.github.io/tsuruno.tk/</link>
     </image>
     <itunes:owner>
@@ -27,14 +27,14 @@
     <language>en-us</language>
     <itunes:explicit>no</itunes:explicit>
     <pubDate>Mon, 13 Apr 2020 13:00:00 PDT</pubDate>
-    <link>https://rodare.github.io/tsuruno.tk/feed.xml</link>
+    <link>https://rodare.github.io/tsuruno.tk/web/player/feed/feed.xml</link>
     <itunes:image href="https://rodare.github.io/tsuruno.tk/img/icon.jpg" />
     <item>
       <author>Rodrigo Arenas Catalán</author>
       <itunes:author>Rodrigo Arenas Catalán</itunes:author>
       <title>Flutter Desktop/Web and VR</title>
       <pubDate>Mon, 13 Apr 2020 13:00:00 GMT</pubDate>
-      <enclosure url="https://rodare.github.io/tsuruno.tk/audio/Hi.mp3" type="audio/mpeg" length="34216300" />
+      <enclosure url="https://rodare.github.io/tsuruno.tk/web/player/audio/Hi.mp3" type="audio/mpeg" length="34216300" />
       <itunes:duration>54:08</itunes:duration>
       <guid isPermaLink="false">cepod01</guid>
       <itunes:explicit>no</itunes:explicit>
