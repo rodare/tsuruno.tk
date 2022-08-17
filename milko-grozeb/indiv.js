@@ -8,11 +8,11 @@
     var myName = "Milko Grozeb"
 function memberName(){
     document.write(myName);
-} 
+}
 
 function memberEmail(){
     document.write("milko.grozeb@gmail.com");
-} 
+}
 
 function pressed(){
     var text = document.getElementById("inp").value;
@@ -31,18 +31,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 /* ]]> */
 
 
-function myCalendar() {
-    var g = document.createElement("iframe");
-    g.setAttribute("class", "content");
-    g.setAttribute("id", "myFrame");
-          g.setAttribute("src", "https://calendar.google.com/calendar/embed?src=qpbmcm8fg31ntfemrq9kvd4e2s%40group.calendar.google.com&ctz=Europe%2FWarsaw");
-      g.setAttribute("style", "border: 0");
-          g.setAttribute("width", "800");
-           g.setAttribute("height", "600");
-           g.setAttribute("frameborder", "0");
-           
-    document.body.appendChild(g);
-  }
+
 
 // var arr = ["hola", 1, 2, 5, "yo"]
 // var i = 0
@@ -76,6 +65,6 @@ function myCalendar() {
 
 
 // function writeName(){
-//   var b=document.getElementById("input3").value; 
+//   var b=document.getElementById("input3").value;
 //   document.getElementById("output3").innerHTML=b;
 // }
