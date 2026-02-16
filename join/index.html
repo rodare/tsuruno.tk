@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
   <script>
+    // 1. Get the event title from the URL (e.g., ?event=Yoga%20Class)
     const params = new URLSearchParams(window.location.search);
-    const event = params.get("event");
+    const eventName = params.get("event");
 
+    // 2. Your Form URL
     const baseFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfGSp0mUcL3j4ticdiFmwAAfCJ_NC4IGFpEbXW5pa7qTiz32w/viewform";
 
-    if (event) {
-      const redirectUrl = baseFormUrl + "?entry.959235960=" + encodeURIComponent(event);
-      window.location.href = redirectUrl;
+    // 3. The Entry ID for the "Event Title" field in your form
+    // Double check that 'entry.959235960' is correct!
+    const entryId = "entry.959235960";
+
+    if (eventName) {
+      // Construct the Google Form pre-filled URL
+      const redirectUrl = `${baseFormUrl}?usp=pp_url&${entryId}=${encodeURIComponent(eventName)}`;
+      
+      // Execute Redirect
+      window.location.replace(redirectUrl);
     } else {
-      document.write("Event not specified.");
+      document.body.innerHTML = "<h3>Error: No event specified in the link.</h3>";
     }
   </script>
 </head>
 <body>
+  <p>Redirecting to signup form...</p>
 </body>
 </html>

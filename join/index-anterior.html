@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const event = params.get("event");
+
+    const baseFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfGSp0mUcL3j4ticdiFmwAAfCJ_NC4IGFpEbXW5pa7qTiz32w/viewform";
+
+    if (event) {
+      const redirectUrl = baseFormUrl + "?entry.959235960=" + encodeURIComponent(event);
+      window.location.href = redirectUrl;
+    } else {
+      document.write("Event not specified.");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
