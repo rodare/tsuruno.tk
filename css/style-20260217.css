@@ -112,7 +112,7 @@ aside {
 	float: left;
 	width: 9%;
 	padding: 1.1%;
-	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	border: 2px solid #342922;
     border-style: none solid none none;
 }
@@ -126,61 +126,6 @@ footer {
 	clear: both;
 }
 
-.more{
-   display: none;
-}
-.post{
-   color: #9999a0;
-   font-size: 18px;
-   text-align: justify;
-   line-height: 25px;
-   font-family: 'Work Sans',sans-serif;
-
-}
-.post:not(:last-child){
-   margin-bottom: 30px;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: rgb(214, 243, 255);
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#more {display: none;}
-
-#members{
-    display: none;
-}
 
 @media(max-width:991px){
 
@@ -192,10 +137,7 @@ footer {
         display: initial;
     }
 
-    aside{display: none;}
-
-
-    .content{
+    .content, aside{
         position: relative;
         top: 70px;
         height: 1200px;
@@ -235,25 +177,11 @@ footer {
         display: initial;
     }
     .content{
-        width: 100%;
+        width: 75%;
     }
     aside {
 	    width: 25%;
 }
-    .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-    }
-
-    #members{
-    display: initial;
-    }
-    
-    .members-align{
-        display: block;
-        float: center;
-    }
-
 }
 
 
