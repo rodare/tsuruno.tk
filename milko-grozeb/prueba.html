@@ -3,56 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equal Height with Grid</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .main-layout-grid {
-            display: grid; /* This is the key: makes direct children grid items */
-            grid-template-columns: 250px 1fr; /* Defines two columns: fixed 250px and 1fr (remaining space) */
-            /* grid-template-columns: 1fr 3fr; would make it a 1/4 and 3/4 split */
-            gap: 0px; /* Space between columns, if desired */
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            border: 1px solid #ddd;
-            min-height: 300px; /* Just for initial visual */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            background-color: #fff;
-        }
-
-        .aside-element-grid {
-            padding: 20px;
-            background-color: #e6f7ff; /* Light blue */
-            border-right: 1px solid #ddd;
-            box-sizing: border-box;
-        }
-
-        .content-element-grid {
-            padding: 20px;
-            background-color: #fff; /* White */
-            box-sizing: border-box;
-        }
-
-        h2 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 1em;
-        }
-
-        /* Example to show dynamic height change */
-        .content-element-grid p:last-child {
-            margin-bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>	
+    <script type="text/javascript" src="indiv.js"></script>
 </head>
 <body>
 
