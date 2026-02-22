@@ -83,7 +83,26 @@ function probando(){
   }
   }
 
+$(function() {
+    // Load the Sidebar
+    if ($("#shared-sidebar").length) {
+        $("#shared-sidebar").load("sidebar-shared.html");
+    }
 
+    // Load the About section
+    if ($("#shared-about").length) {
+        // Double check this path! 
+        // If it's in the root folder, try "/about-shared.html" 
+        // or just "about-shared.html" if in the same folder.
+        $("#shared-about").load("about-shared.html", function(response, status, xhr) {
+            if (status == "error") {
+                console.log("Error loading About: " + xhr.status + " " + xhr.statusText);
+            } else {
+                console.log("About loaded successfully.");
+            }
+        });
+    }
+});
 // function writeName(){
 //   var b=document.getElementById("input3").value;
 //   document.getElementById("output3").innerHTML=a;

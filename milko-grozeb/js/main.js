@@ -64,9 +64,9 @@ function memberRedirect(){
       location.replace("/../../milko-grozeb")
   
     }
-    else if(a==="Bacho-Chubinidze"){
+    else if(a==="Asia-Z"){
      
-      location.replace("/../../bacho-chubinidze")
+      location.replace("/../../asia-ziemiakowicz")
 
   }
 

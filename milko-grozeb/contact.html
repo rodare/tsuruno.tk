@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="indiv.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>	<script type="text/javascript" src="indiv.js"></script>
 
 
 </head>
@@ -16,7 +16,7 @@
 
 <header>
     <div class="logo">
-        <a href="index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
+        <a href="../index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
     </div>
 	    <div class="logo-title"><a href="index.html"><script>memberName();</script></a></div>
     <div class="gtranslate_wrapper"></div>
@@ -60,27 +60,12 @@
 
  </div>
 
-<aside>
-    <ul>
-    <li><a href="../index.html"><i class="fa fa-home"></i></button>Back to Main</a></li>
+<aside id="shared-sidebar">
+    </aside>
 
 
 
-        <select id="input" onchange="countryCity()" class="notranslate">
-            <option>select</option>
-            <option>POLAND</option>
-            <option>CHILE</option>
-        </select>
-        <div>
-           <select id="output" onchange="cityMember()" class="notranslate"></select>
-        </div>
-        <div>
-            <select id="output2" onchange="memberRedirect()" class="notranslate"></select>
-        </div>
-    </ul>
-</aside>
-
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 </html>

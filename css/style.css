@@ -182,6 +182,17 @@ footer {
     display: none;
 }
 
+.members-page {
+    display: block;
+    margin: 0 auto;       /* This centers block elements */
+    width: 300px;         /* You must define a width for margin:auto to work */
+    border: 1px solid black;
+    padding: 30px;
+    margin: auto;
+    font-size: 20px;
+    position: static;     /* Ensures absolute positioning is turned off */
+}
+
 @media(max-width:991px){
 
     header{

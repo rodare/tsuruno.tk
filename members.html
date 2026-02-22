@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="indiv.js"></script>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <a href="index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
+        <a href="../index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
     </div>
     <div class="logo-title"><a href="index.html">Tsuruno</a></div>
         <div class="gtranslate_wrapper"></div>
@@ -52,25 +53,16 @@
 
 <div class="content" style="width: 100%;">
     <h3 style="position:relative; text-align: center;">Members</h3>
-   <div class="members-page" style="position: absolute; border: solid black 1px; text-align:left;">
-        <ul>
-        <select id="input" onchange="countryCity()" class="notranslate">
-            <option>select</option>
-            <option>POLAND</option>
-            <option>CHILE</option>
-        </select>
-        <div>
-           <select id="output" onchange="cityMember()" class="notranslate"></select>
-        </div>
-        <div>
-            <select id="output2" onchange="memberRedirect()" class="notranslate"></select>
-        </div>
-    </ul>
+   <div class="members-page">
+
+    <div id="shared-sidebar">
     </div>
+
+</div>
 </div>
 </div>
 
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="indiv.js"></script>
 
 </body>

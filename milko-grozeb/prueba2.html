@@ -10,7 +10,7 @@
 <body>
 <header>
     <div class="logo">
-        <a href="index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
+        <a href="../index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
     </div>
 	    <div class="logo-title"><a href="index.html"><script>memberName();</script></a></div>
 
@@ -45,35 +45,16 @@
 </header>    
 
     <div class="main-layout-grid">
-        <aside class="aside-element-grid">
-    <ul>
-    <div class="gtranslate_wrapper"></div>
-    <script>window.gtranslateSettings = {"default_language":"en","languages":["en","es","pl","ja"],"wrapper_selector":".gtranslate_wrapper","flag_size":16,"flag_style":"3d"}</script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
-
-    <li><a href="../index.html"><i class="fa fa-home"></i></button>Back to Main</a></li>
+        <aside id="shared-sidebar">
+    </aside>
 
 
-
-        <select id="input" onchange="countryCity()" class="notranslate">
-            <option>select</option>
-            <option>POLAND</option>
-            <option>CHILE</option>
-        </select>
-        <div>
-           <select id="output" onchange="cityMember()" class="notranslate"></select>
-        </div>
-        <div>
-            <select id="output2" onchange="memberRedirect()" class="notranslate"></select>
-        </div>
-    </ul>
-        </aside>
 
         <main class="content-element-grid" id="dynamicContentGrid">
 <h3>Welcome to my site</h3>
 <p>Here I will be publishing my writings, images, videos, and audios.<br> Greetings,<br><script>memberName();</script></p>
 
         </main>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
     </div>
 </html>

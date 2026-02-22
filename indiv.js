@@ -5,13 +5,13 @@
 // var cityMember = document.getElementById("cityMember").innerHTML = output="Kraków";
 // var memberName = document.getElementById("memberName").innerHTML = output2= "Milko Grozeb";
 
-var myName = "Milko Grozeb"
+var myName = "Tsuruno"
 function memberName(){
     document.write(myName);
 }
 
 function memberEmail(){
-    document.write("milko.grozeb@gmail.com");
+    document.write("tsuruno.tk@gmail.com");
 }
 
 function memberShare(){
