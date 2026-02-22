@@ -84,25 +84,24 @@ function probando(){
   }
 
 $(function() {
-    // Load the Sidebar
+    // 1. Load the Navigation Menu
+    $("#main-header").load("/header-shared.html", function() {
+        console.log("Header loaded.");
+    });
+
+    // 2. Load the Sidebar (Aside)
     if ($("#shared-sidebar").length) {
-        $("#shared-sidebar").load("sidebar-shared.html");
+        $("#shared-sidebar").load("/sidebar-shared.html");
     }
 
-    // Load the About section
+    // 3. Load the About section
     if ($("#shared-about").length) {
-        // Double check this path! 
-        // If it's in the root folder, try "/about-shared.html" 
-        // or just "about-shared.html" if in the same folder.
-        $("#shared-about").load("about-shared.html", function(response, status, xhr) {
-            if (status == "error") {
-                console.log("Error loading About: " + xhr.status + " " + xhr.statusText);
-            } else {
-                console.log("About loaded successfully.");
-            }
-        });
+        $("#shared-about").load("/about-shared.html");
     }
 });
+
+$("#js-imports").load("scripts-shared.html");
+
 // function writeName(){
 //   var b=document.getElementById("input3").value;
 //   document.getElementById("output3").innerHTML=a;
