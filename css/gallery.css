@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
@@ -34,7 +34,7 @@ p {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 8px;
-  margin: 0 20px; /* Margins for the gallery container */
+  margin: 0 0px; /* Margins for the gallery container */
 
   /* Optional: Hide scrollbar for a cleaner look */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -172,32 +172,56 @@ p {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .gallery-column {
-    width: 40vw; /* Larger thumbnails on smaller screens */
+    width: 40vw;
     height: 120px;
   }
 }
 
 @media (max-width: 480px) {
+  .gallery-row {
+    display: flex; /* Flexbox ułatwia układ poziomy */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+  }
+
   .gallery-column {
-    width: 60vw; /* Even larger thumbnails on very small screens */
-    height: 100px;
+    flex: 0 0 70%; /* Zdjęcie zajmuje 70% szerokości ekranu */
+    width: auto; 
+    max-width: none;
+    margin-right: 15px;
   }
+
   .gallery-column img {
-    height: 100px;
+    height: 180px; /* Wyższe zdjęcia lepiej wyglądają na mobile */
+    object-fit: cover;
   }
+
+  /* Stylizacja powiększonego zdjęcia na telefonie */
+  .expanded-container img {
+    max-width: 95%;
+    max-height: 70vh; 
+  }
+
   .expanded-container .close-btn {
     font-size: 30px;
     top: 10px;
     right: 10px;
   }
+
   .expanded-container .image-text {
     font-size: 1em;
     bottom: 10px;
+    width: 80%;
+    text-align: center;
   }
+
   .nav-arrow {
-    font-size: 2em;
-    padding: 5px;
-    left: 10px;
-    right: 10px;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
   }
-}
+  
+  .nav-arrow.left { left: 5px; }
+  .nav-arrow.right { right: 5px; }
+} /* To jest klamra zamykająca CAŁE @media (max-width: 480px) */
