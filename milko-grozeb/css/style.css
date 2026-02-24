@@ -80,6 +80,26 @@ header .navbar ul li:hover > ul{
     display: initial;
 }
 
+/* Rezerwujemy minimalną szerokość dla kontenera, który ładuje menu */
+#main-header {
+    min-width: 5px; /* Dopasuj tę wartość do szerokości Twojego menu */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Zapobiegamy skakaniu logo-title */
+header .logo-title {
+    flex-shrink: 0; /* Logo nie da się "ścisnąć" */
+    /* margin-right: auto;  Zawsze spycha resztę (menu) na prawą stronę */
+}
+
+/* Ukrywamy miganie flag GTranslate */
+.gtranslate_wrapper {
+    min-width: 100px; /* Rezerwacja miejsca na flagi */
+    height: 20px;
+}
+
 #menu-bar{
     display: none;
 }
