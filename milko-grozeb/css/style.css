@@ -248,12 +248,12 @@ footer {
 
     .content {
         position: relative;
-        top: 80px;      /* Zmniejszony odstęp, bo header na mobile jest mniejszy */
+        top: 63px;      /* Zmniejszony odstęp, bo header na mobile jest mniejszy */
         width: 100%;    /* Zajmuje całą szerokość - koniec z "krawatem" */
         float: none;    /* Usuwamy pływanie do prawej */
         height: auto;   /* Kasujemy sztywne 1200px */
         min-height: 100vh; /* Tło będzie sięgać co najmniej do dołu ekranu */
-        padding: 20px;  /* Większy komfort czytania na telefonie */
+        padding: 14px;  /* Większy komfort czytania na telefonie */
     }
 
     .content h2 {
