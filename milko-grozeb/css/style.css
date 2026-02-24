@@ -94,7 +94,7 @@ header label{
 .content, aside{
     position: relative;
     top: 120px;
-	height: 1200px;
+	min-height: 1200px;
 	margin: auto;
 }
 
@@ -192,6 +192,27 @@ footer {
     position: static;     /* Ensures absolute positioning is turned off */
 }
 
+/* Kontener, który utrzymuje proporcje 16:9 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* To daje proporcje 16:9 (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+/* Sam film wypełnia cały kontener */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
+}
+
 @media(max-width:991px){
 
     header{
@@ -205,11 +226,19 @@ footer {
     aside{display: none;}
 
 
-    .content{
+    .content {
         position: relative;
-        top: 70px;
-        height: 1200px;
-        margin: auto;
+        top: 80px;      /* Zmniejszony odstęp, bo header na mobile jest mniejszy */
+        width: 100%;    /* Zajmuje całą szerokość - koniec z "krawatem" */
+        float: none;    /* Usuwamy pływanie do prawej */
+        height: auto;   /* Kasujemy sztywne 1200px */
+        min-height: 100vh; /* Tło będzie sięgać co najmniej do dołu ekranu */
+        padding: 20px;  /* Większy komfort czytania na telefonie */
+    }
+
+    .content h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 
     header .logo a img{
