@@ -198,18 +198,42 @@ footer {
 
 #more {display: none;}
 
+.dots {
+    display: inline; /* Widoczne na starcie */
+}
+
 #members{
     display: none;
 }
+/* 1. Powiększamy samo pudełko (kontener) */
 .members-page {
     display: block;
-    margin: 0 auto;       /* This centers block elements */
-    width: 300px;         /* You must define a width for margin:auto to work */
-    border: 1px solid black;
-    padding: 30px;
-    margin: auto;
-    font-size: 20px;
-    position: static;     /* Ensures absolute positioning is turned off */
+    width: 100%;           /* Zmieniamy z 300px na 100% */
+    max-width: 600px;      /* Ale ustawiamy limit, żeby nie było za szerokie na komputerze */
+    margin: 40px auto;     /* Centrowanie i większy odstęp od góry */
+    border: 2px solid #342922; /* Grubsza ramka */
+    border-radius: 10px;   /* Zaokrąglone rogi */
+    padding: 40px;         /* Więcej miejsca w środku */
+    background-color: rgba(214, 243, 255, 0.5); /* Lekkie tło, żeby pasowało do headera */
+    text-align: center;
+}
+
+/* 2. Powiększamy same menu rozwijane (select) */
+.members-page select {
+    width: 100%;           /* Selecty zajmą całą szerokość pudełka */
+    padding: 15px;         /* Wysokość pól - będą łatwiejsze do kliknięcia */
+    margin: 15px 0;        /* Odstępy między jednym menu a drugim */
+    font-size: 20px;       /* Większy tekst w środku */
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* 3. Usuwamy kropki z listy ul, jeśli tam zostały */
+.members-page ul {
+    list-style: none;
+    padding: 0;
 }
 
 /* Kontener, który utrzymuje proporcje 16:9 */
