@@ -27,7 +27,7 @@ $(document).ready(function() {
 function cityMember(){
   var a= document.getElementById("output").value;
     if(a==="Kraków"){
-  var arr=["member","Milko-Grozeb", "Rodrigo-Arenas", "Asia-Ziemiakowicz", "Magda-G"];
+  var arr=["member","Milko-Grozeb", "Rodrigo-Arenas", "Asia-Ziemiakowicz", "Dawid-Rozmus"];
     }
     else if(a==="Poznan"){
   var arr=["Kasia","Eduardo","Lorena"];
