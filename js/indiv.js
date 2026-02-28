@@ -26,7 +26,6 @@ function memberWant(){
     document.write("I would like to learn how to play the guitar, to do trips with friends, to learn about ceramics, to learn a programming language.");
 }
 
-
 function pressed(){
     var text = document.getElementById("inp").value;
     hola.innerHTML=text

@@ -4,39 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+    
     <script>window.gtranslateSettings = {"default_language":"en","languages":["en","es","pl","ja"],"wrapper_selector":".gtranslate_wrapper","flag_size":16,"flag_style":"3d"}</script>
     <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
-    <script type="text/javascript" src="js/indiv.js"></script>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
+
+    <script type="text/javascript" src="js/indiv.js"></script>
 </head> 
+
 <body>
 
 <header>
     <div class="logo">
         <a href="../index.html"><img src="images/tsuru.png" alt="Tsuru"></a>
     </div>
-	    <div class="logo-title"><a href="index.html"><script>memberName();</script></a></div>
-                <div class="gtranslate_wrapper"></div>
-    <div class="lognav" id="main-header">
+    
+    <div class="logo-title">
+        <a href="index.html"><script>memberName();</script></a>
     </div>
+    
+    <div class="gtranslate_wrapper"></div>
+    
+    <div class="lognav" id="main-header"></div>
 </header>      
 
-
-      
-
 <div class="content">
-<h3>Blog</h3>
-<p>This is a blog.<br> Greetings,<br>Rodrigo Arenas.</p></div>
+    <article class="img-info">
+        <h2>Blog</h2>
 
-<aside id="shared-sidebar">
-    </aside>
+        <div class="row">
+            <div class="leftcolumn">
 
+                <div class="card">
+                    <div class="post">
+                        <h2>Perico</h2>
+                        <h5>28.02.2026</h5>
+                        
+                        <div class="fakeimg" style="height:200px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Eupsittula_pertinax_Perico_carisucio_Brown-throated_Parakeet_%286265347586%29.jpg" 
+                                 style="height: 100%; width: 100%; padding: 0px 30px; object-fit: cover;" alt="Perico">
+                        </div>
+                
+                        <p>Perico</p> 
+                        <span class="dots">...</span>
+                        
+                        <span class="more">
+                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTzIT_73t1FMCLy94Ux8DuNmzq1E53qO1rEcNN8oJZz1oU7Rf7lXJIFNDBQFj0iLgs55cvzvHsfeSy7/pub?embedded=true" 
+                                    style="border:none;" width="100%" height="500"></iframe>
+                            
+                            <script src="https://utteranc.es/client.js"
+                                    repo="rodare/tsuruno.tk"
+                                    issue-term="Perico"
+                                    theme="github-light"
+                                    crossorigin="anonymous"
+                                    async>
+                            </script>
+                        </span>
+                        
+                        <button class="read">read more</button>
+                    </div>
+                </div>
 
+<div class="card"> <div class="post"> <h2>Perico</h2> <h5>2026.02.28</h5> <div class="fakeimg" style="height:200px;"> <img src="images/tsuru.png" style="height:100%; width:100%; padding:0px 30px; object-fit:contain;"> </div> <p>Perico</p> <span class="dots">...</span> <span class="more"> <iframe src="https://docs.google.com/document/d/e/2PACX-1vTzIT_73t1FMCLy94Ux8DuNmzq1E53qO1rEcNN8oJZz1oU7Rf7lXJIFNDBQFj0iLgs55cvzvHsfeSy7/pub?embedded=true" style="width:100%; height:600px; border:none;"></iframe style="width:100%; height:600px; border:none;"> <script src="https://utteranc.es/client.js" repo="rodare/tsuruno.tk" issue-term="Perico" theme="github-light" crossorigin="anonymous" async></script> </span> <button class="read">read more</button> </div> </div>
+                </div>
+
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <div class="fakeimg" style="height:100px;">Image</div>
+                    <p>Some text about me...</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Posts by Year</h3>
+                    <a href="blog.html"><div class="fakeimg">2025</div></a><br>
+                    <a href="blog2024.html"><div class="fakeimg">2024</div></a><br>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<aside id="shared-sidebar"></aside>
 
 <script type="text/javascript" src="../js/main.js"></script>
-<script type="text/javascript" src="js/indiv.js"></script>
 
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<style>
+/* Style dla okienka (Modal) */
+.modal { display: none; position: fixed; z-index: 1000; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+.modal-content { margin: auto; display: block; width: 80%; max-width: 700px; }
+#caption { margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px; }
+.modal-content, #caption { -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s; }
+@-webkit-keyframes zoom { from {-webkit-transform:scale(0)} to {-webkit-transform:scale(1)} }
+@keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
+.close { position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: 0.3s; }
+.close:hover, .close:focus { color: #bbb; text-decoration: none; cursor: pointer; }
+@media only screen and (max-width: 700px){ .modal-content { width: 100%; } }
+/* Styl dla zdjęcia w poście (rączka) */
+.fakeimg img { cursor: pointer; transition: 0.3s; }
+.fakeimg img:hover { opacity: 0.7; }
+</style>
+
+<script>
+// Skrypt obsługujący otwieranie i zamykanie
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Znajdź wszystkie zdjęcia w postach
+document.querySelectorAll('.post img').forEach(img => {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt; // Użyj tekstu alternatywnego jako podpisu
+  }
+});
+
+// Zamykanie X
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Zamykanie kliknięciem poza zdjęciem
+modal.onclick = function(e) {
+  if (e.target !== modalImg) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
